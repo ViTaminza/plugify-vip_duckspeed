@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
 	"version": "${VIP_DUCKSPEED_VERSION}",
 	"name": "vip_duckspeed",
-	"description": "[VIP] DuckSpeed: a per-frame timer writes the group's 'duckspeed' value into m_flDuckSpeed of every alive VIP holding the duck button (feature 'duckspeed', VIP_FLOAT, HIDE). Ported from the Pisex VIP core module VIP_DuckSpeed (vip_duckspeed). Requires the vip core.",
+	"description": "[VIP] DuckSpeed: every game frame writes the group's 'duckspeed' value into m_flDuckSpeed of every alive VIP holding the duck button (feature 'duckspeed', VIP_FLOAT, HIDE). Ported from the Pisex VIP core module VIP_DuckSpeed (vip_duckspeed). Requires the vip core. No exported methods.",
 	"author": "ABKAM, ported to Plugify",
 	"website": "https://github.com/untrustedmodders/plugify",
 	"license": "GPL-3.0",
@@ -16,12 +16,7 @@
 		},
 		{
 			"name": "vip",
-			"constraints": ">=1.0.0"
-		},
-		{
-			"name": "hudmenu",
-			"constraints": ">=1.0.0",
-			"optional": true
+			"constraints": ">=1.2.7"
 		}
 	]
 }
